@@ -1,0 +1,841 @@
+commit f8b5ec6ccc65f216897244f3e781026577ea8225
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Wed Mar 29 02:37:43 2023 +0100
+
+    Completed error logging, error.log is appended to whenever an error appears and is read and displayed on the error logger page (only viewable to admin users)
+
+commit 15c9a0542712a95fb50e63911171d714d708cb29
+Merge: 7e4f9d7 1fa1e41
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Tue Mar 28 17:35:30 2023 +0100
+
+    Merged
+
+commit 7e4f9d77576dc05054da29fa9d481820e40eab3e
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Tue Mar 28 17:34:57 2023 +0100
+
+    Updated error logger function to not show the user of some errors logged
+
+commit 1fa1e4177b975ac50a8f7855b15b5bc3b11573f4
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Mar 28 17:24:38 2023 +0100
+
+    Fixed double error message on failed login
+
+commit 3466f629aad5848e489049847b8f1547b4c43114
+Merge: 85236ed c589890
+Author: N1020368 <michael.swann2021@my.ntu.ac.uk>
+Date:   Tue Mar 28 17:12:25 2023 +0100
+
+    Merge pull request #12 from N1012302/ChangingErrorMsg
+    
+    Updated catch blocks for all excetpions
+
+commit c58989085c947ff938908b6726568e002e51a01c
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Mar 28 17:11:52 2023 +0100
+
+    Updated catch blocks for all excetpions
+
+commit 85236ed8ca4b58d8c9d9766e9d6f3e15ec700994
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Tue Mar 28 17:10:42 2023 +0100
+
+    Added error logging to some of the files, added more error logging functions
+
+commit 2cf3676f860f1a191d57d1d946f6ffab02634086
+Merge: c1f4f92 f389f5f
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Tue Mar 28 16:21:40 2023 +0100
+
+    Fixed merge conflict, 1 line bruh
+
+commit c1f4f92565b553715d8b48d50643cbf06f6766eb
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Tue Mar 28 16:20:02 2023 +0100
+
+    Added error logger, now to spend 4 hours changing the method in all of the files
+
+commit f389f5f27125aa656e4876a61c25cf2224ed4e3d
+Merge: eaa2844 bb757c0
+Author: N1020368 <michael.swann2021@my.ntu.ac.uk>
+Date:   Tue Mar 28 16:17:35 2023 +0100
+
+    Merge pull request #11 from N1012302/Tidy_up
+    
+    Tidied up code a bit, added some comments. Terminal gets focus on page load. Log in seems to be big free now.
+
+commit bb757c0d8205ab485c558bca3b0c6e06c0d59c81
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Mar 28 16:16:32 2023 +0100
+
+    Selected terminal gets focus now
+
+commit eaa2844cd9d127948aecba30e88d72e2dad2517e
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Tue Mar 28 15:37:04 2023 +0100
+
+    Removed editing an existing file for now, added the ability to give text to a file when created. Added option to view a text file
+
+commit d8df2a6814599e7c68dca1f036d74c77408dc93b
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Mar 28 14:10:45 2023 +0100
+
+    Added some comments and hopefully fixed bug with login
+
+commit 4e2686cd322b006b1f7d858de4f6afc570c0e8ea
+Merge: 0ead4b4 1a7aab9
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Tue Mar 28 13:13:35 2023 +0100
+
+    Merged
+
+commit 0ead4b40772055c771f92f52c38358cc273f5883
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Tue Mar 28 13:13:15 2023 +0100
+
+    Added window for file editing, need to fix multiple files of the same name
+
+commit 1a7aab9625fd3ab261aaf0a05aebca0fe47996eb
+Merge: a23a34b 6d8a2af
+Author: N1012302 <jake.mattless2021@my.ntu.ac.uk>
+Date:   Thu Mar 23 18:01:37 2023 +0000
+
+    Merge pull request #10 from N1012302/master
+    
+    Merged File_dev from Master
+
+commit 6d8a2afcbe07c6ecdc1bb4a7c696d4959b897ca6
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Thu Mar 23 15:57:39 2023 +0000
+
+    Added changing password back, using new password hashing function
+
+commit 5019c1219b36cfc8ca9d7498cc04be20c07a75f1
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Thu Mar 23 15:55:16 2023 +0000
+
+    Added delete_database.sh used to reset the database (used for development and testing)
+
+commit f487dc32dc48f4a05b1064311b45900b45754f96
+Merge: a23a34b 812b466
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Thu Mar 23 14:58:28 2023 +0000
+
+    Merged
+
+commit a23a34bed659f54fd95676453711e98a7f65d458
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Thu Mar 23 14:52:47 2023 +0000
+
+    Added functionality to upload text file. Fixed bug when logging in after having logged out already
+
+commit 812b4668fa2971a84a00f63f1a09bb919dd2275a
+Author: N1020368 <michael.swann2021@my.ntu.ac.uk>
+Date:   Thu Mar 23 14:40:08 2023 +0000
+
+    Create README.md
+
+commit e263c69c0bc363571e20573adc0dd03bc9e4d0c2
+Merge: 50450e5 f935f07
+Author: N1020368 <michael.swann2021@my.ntu.ac.uk>
+Date:   Thu Mar 23 14:24:01 2023 +0000
+
+    Merge pull request #9 from N1012302/SSH_Containers
+    
+    Ssh containers
+
+commit f935f0743a0efd1fac60ad1f9e829813426798d3
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Mar 23 14:23:06 2023 +0000
+
+    Ready for merge to master
+
+commit 889161daf1fead77203d74d8f753e109e7d73448
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Mar 23 12:57:31 2023 +0000
+
+    Added my laptop to the authorized keys file
+
+commit 7b568db56463a4cf7d8cee55b78b5b3fd5544c72
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Mon Mar 20 19:51:25 2023 +0000
+
+    Terminal now autoscrolls, still issue with focus
+
+commit 750e74c446d5d02fc07b05bf6fe42e0bff839192
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Mon Mar 20 16:35:31 2023 +0000
+
+    Can select which container to run terminal in
+
+commit 50b170e41062027610e442fed7a8a43e64d21329
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Mon Mar 20 13:01:56 2023 +0000
+
+    Terminal now runs in container and locally. Need to add select option for which container to run it in
+
+commit 62ed73ca1501e951ae3bd7b1996ad810afc598a5
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Mon Mar 20 08:48:52 2023 +0000
+
+    Manage to launch nano but can save file
+
+commit 5d8f0caf836cc2712fc7891c7bca9eb8e8421967
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Sun Mar 19 22:32:18 2023 +0000
+
+    Trying to run nano in remote containers WIP
+
+commit dc5ac7ac0b93824ad8cbb567f91b4b7183bc8ea7
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Sun Mar 19 16:32:40 2023 +0000
+
+    Limited terminal functionality in containers
+
+commit c682f6ecfb6761bfb67d366adf3638741d8c5759
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Sat Mar 18 23:11:31 2023 +0000
+
+    Very simple ssh into container
+
+commit 4246a63ef9c69f1dcda3c9c31ca893f8a6ffe489
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Sat Mar 18 22:30:15 2023 +0000
+
+    Found bug effecting shared files
+
+commit 93e7b2b8127cdaf46d244c5f75f3b42cfb7a588f
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Sat Mar 18 21:49:33 2023 +0000
+
+    Changed decrypt method
+
+commit 96167a984da7aa07e302db0db2b9a308d0c46df9
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Sat Mar 18 21:03:16 2023 +0000
+
+    Fixed small bug with shared file loading
+
+commit 1c1b604454f8233ba83366e02f2e1cb9862925de
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Sat Mar 18 19:09:23 2023 +0000
+
+    Session ends when app is closed
+
+commit e17dc40152d092a1716140e2158f389162876ce1
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Sat Mar 18 18:45:27 2023 +0000
+
+    Encryption and decryption now using streams to further reduce temporary file use
+
+commit 7b11190e84744ecba8d64dddcca96f48d0f5229a
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Sat Mar 18 18:03:28 2023 +0000
+
+    Fixed issue with file sharing
+
+commit 823203375e2b1c1de1a6593086305266655294af
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Sat Mar 18 17:21:59 2023 +0000
+
+    Upload and download to containers uses byte array streams rather than temp files
+
+commit e433d4e99637cafc79fc6d22202f8e0776fec601
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Sat Mar 18 16:18:55 2023 +0000
+
+    Files are stored in containers but heavy use of temp files, will be better using streams instead
+
+commit 50450e56b0d069b3718eed0ca8a2c6eeb048eb54
+Merge: caa295f 2191419
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Thu Mar 16 17:53:23 2023 +0000
+
+    Merge
+
+commit caa295f4699f3b67005bd7d89e967d3763f3517a
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Thu Mar 16 17:52:32 2023 +0000
+
+    Updated some styling, added modal to 'upload file' button (it doesn't do anything yet, I need to figure out the file system)
+
+commit b4046f12f322d279533be4c3d41625cb97d0b5bd
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Thu Mar 16 16:51:11 2023 +0000
+
+    Began work on file adding, updated GUI for folder creation
+
+commit 219141945b441165b68f91b520e067d43e7b380a
+Merge: 6f46eb1 57abd86
+Author: N1020368 <michael.swann2021@my.ntu.ac.uk>
+Date:   Thu Mar 16 14:46:36 2023 +0000
+
+    Merge pull request #8 from N1012302/ErrorAlerts
+    
+    Added alert in User file
+
+commit 57abd8660eaa6216e9e0919391d6dba169dd9e3c
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Mar 16 14:46:16 2023 +0000
+
+    Added alert in User file
+
+commit 6f46eb1addfea9d33026afbf017f03cb734beff7
+Merge: 8f2e8bd 2911362
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Mar 16 14:28:16 2023 +0000
+
+    Mergggggge
+
+commit 8f2e8bd19d4fab734e2d3d86efa585d9788a91b7
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Mar 16 14:23:21 2023 +0000
+
+    Added catch for encdec exception
+
+commit e15f9c028a82c7f8f951be0765cf2a31ab649fdf
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Mar 16 14:22:06 2023 +0000
+
+    Reverted User file
+
+commit 7de3dabc921aca366e1d273ac013e1a0002fe3c3
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Mar 16 14:16:20 2023 +0000
+
+    Added warning dialogs when an error occurs
+
+commit 29113628d1d67cea0e548c23700119880a19678d
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Thu Mar 9 17:57:38 2023 +0000
+
+    Added a check to  see if the user is already logged in using temporary files
+
+commit 34255ffa749ada2797a24345f11f6b58c3859805
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Thu Mar 9 16:52:16 2023 +0000
+
+    Removed device functionality, as it was unneeded. Auto login is now slightly more unsafe, but that can be fixed
+
+commit 5e3be99f486f3c67ce3bec4bab091186c94c2250
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Thu Mar 9 15:07:55 2023 +0000
+
+    added admin users, generated default user for testing, added error logger page (empty for now)
+
+commit d6b801c54460fe44dca7a3bf4577fcb547f2acfa
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Mar 9 15:06:20 2023 +0000
+
+    Created error alerts for catch blocks
+
+commit 987405358b9ec68b02b14121d8ff4be8b7631a2b
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Thu Mar 9 13:55:49 2023 +0000
+
+    added ScrollPane in usersettings and updated buttons in the terminal page
+
+commit 9e1d23af0942e0401d405ee3120f171506b2ddfd
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Tue Mar 7 18:55:42 2023 +0000
+
+    Implemented updating password correctly (still need to update the UserTable updatePassword function)
+
+commit 5e903129d2c310b059eb36d719e864ed3e165c60
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Tue Mar 7 16:48:41 2023 +0000
+
+    Fixed merge issue
+
+commit e157673a1074dc2bf6938b3c82fdda0b3628ff96
+Merge: aaa3134 af20d1d
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Tue Mar 7 16:47:36 2023 +0000
+
+    Merged UI_dev adding some small changes
+
+commit af20d1d372bb8e5f7b51e591063a38ce50745f42
+Merge: 2764893 97fc8fa
+Author: N1020368 <michael.swann2021@my.ntu.ac.uk>
+Date:   Tue Mar 7 16:44:57 2023 +0000
+
+    Merge pull request #7 from N1012302/RSA_enc
+    
+    Rsa enc
+
+commit 97fc8fab6d0147f16a972a3baf9721bf8e52ffcf
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Mar 7 16:43:47 2023 +0000
+
+    Ready for merge :/
+
+commit 7a75a5a11da3a6f631adf72733c77fac1ea81ed2
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Fri Mar 3 18:44:44 2023 +0000
+
+    Tidied up code and added some comments. .key files are now ignored
+
+commit ffa14537ab61df24dff1f38e0374207ca42de487
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Fri Mar 3 16:34:10 2023 +0000
+
+    Chabges to secure storage
+
+commit d4b3bfd8292ac4b6a8eb5fe5428a52f46f764cdf
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Mar 2 22:59:45 2023 +0000
+
+    Hashing done in seperate class to database. Salt is stored on user row.
+
+commit 0a83eaf36c24194dace906884bc903622f306c59
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Mar 2 21:50:21 2023 +0000
+
+    Encrypted file split into chunks
+
+commit b1fd34b6ac959a5974376787615201c8629de46a
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Mar 2 19:08:06 2023 +0000
+
+    Encryption in stable state. Sharing, copying available.
+
+commit aaa313404a8222f236bb3008787905ab6e641884
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Thu Mar 2 15:16:24 2023 +0000
+
+    Updated userSettings.java to allow better username changing
+
+commit 7b77042eebb288bb7486a06b2289b11adb72b471
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Mar 2 14:53:13 2023 +0000
+
+    encdec WIP
+
+commit 2f9fca5cb4ac500b26152600fdd63daf03e6e7e1
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Mar 2 13:55:45 2023 +0000
+
+    File encrypted with aes and rsa
+
+commit e8736772b7a38534cf3939adb0c48c8817a0fef9
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Mar 2 08:59:11 2023 +0000
+
+    Working on AES encryption
+
+commit b0090076553e7cff27fa1c4b8cc59a93b1031cd9
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Wed Mar 1 23:09:42 2023 +0000
+
+    Started working on RSA encryption
+
+commit b3134eb7558ac421417318cb2bd4836751095911
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Wed Mar 1 21:48:59 2023 +0000
+
+    Fixed bug with null exception when selecting a directory is cancelled
+
+commit d3f79431860619c8abd8ad10a04ab516564b99ef
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Wed Mar 1 19:10:50 2023 +0000
+
+    Added better icons for files and folders and icon changes depending on type
+
+commit 48e5a91c2cb435e7eccf1223da850c06bc8f9d71
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Feb 28 22:29:02 2023 +0000
+
+    Folder tree removes item if the directory is removed
+
+commit d5a68ee6bc888eb76313d8b74e31d55cdeab73fc
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Feb 28 22:03:19 2023 +0000
+
+    Changed event action on folder tree for selecting a dir
+
+commit b8816c4ef1a4664f8e8b240ca638b0a4e9d37e10
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Feb 28 21:52:40 2023 +0000
+
+    Treeview updates when new dir is created
+
+commit 032842c1a0969466a83c9f9b30487af63719da7e
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Feb 28 14:11:06 2023 +0000
+
+    Sharing files between users now possible. Needs testing and a bit of tidying up.
+
+commit e970778f82183715e2f3cd7e9a77a7493ee07bb9
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Feb 23 15:05:49 2023 +0000
+
+    Can copy a shared file to local files
+
+commit 158fcc2fac9337bd6c01c929a0a8ff0f633029f4
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Thu Feb 23 14:58:26 2023 +0000
+
+    Began updating user settings page, updated login/signup pages
+
+commit bad7593a64a265e7e3af7305446cc7b23d0ca9d8
+Author: Michael Swann <N1020368@my.ntu.ac.uk>
+Date:   Thu Feb 16 16:07:45 2023 +0000
+
+    Can share files with other users. Requires dropping the sharedFile table if already exists
+
+commit 5e881316bef0e27a8defd1789eb4ddc402a5b68b
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Feb 16 14:57:49 2023 +0000
+
+    WIP
+
+commit 2b9a9dabc06717990b08157f3658407e5522fd5c
+Author: Michael Swann <N1020368@my.ntu.ac.uk>
+Date:   Thu Feb 9 18:45:13 2023 +0000
+
+    Created modal window for selecting users to share files with
+
+commit 97ad475104983432f70541cd831eedbfafa3a65d
+Author: Michael Swann <N1020368@my.ntu.ac.uk>
+Date:   Tue Feb 7 23:11:21 2023 +0000
+
+    Created shared file table and related classes.
+
+commit 2764893cbf0f4eb811f435daccf2764da9581c3e
+Merge: 345c1ff 94a7dc5
+Author: N1020368 <michael.swann2021@my.ntu.ac.uk>
+Date:   Sun Feb 5 22:52:34 2023 +0000
+
+    Merge pull request #6 from N1012302/File_mgmt
+    
+    File mgmt
+
+commit 94a7dc560a3f63796fe7dade666e79374bd9b032
+Author: Michael Swann <N1020368@my.ntu.ac.uk>
+Date:   Sun Feb 5 22:40:54 2023 +0000
+
+    Cut, Copy, Paste functionality added to fileviewer. Needs thorough testing
+
+commit 47c27d004425df0b459af838a81f2b32c5e90d4f
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Fri Feb 3 23:36:23 2023 +0000
+
+    All context menu options except cut,copy,paste are functional.
+
+commit 35e06283b0e79eb47708f8e43711c7af73ae619a
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Fri Feb 3 14:19:52 2023 +0000
+
+    Created classes for context menus and items. Needs testing.
+
+commit 5f496ab6b625828edf47017008a076331f6a3633
+Merge: 89b3eeb b272e62
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Feb 2 15:57:32 2023 +0000
+
+    Merge branch 'File_mgmt' of https://olympuss.ntu.ac.uk/N1012302/COMP20081_Group_Assessment into File_mgmt
+
+commit 89b3eeb21faed85b3553993f4a6c7f34a01e2148
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Thu Feb 2 15:57:07 2023 +0000
+
+    Disable controls depending on current drive
+
+commit b272e62310495ed0f4c21d31e95d2b77e9e7623b
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Tue Jan 31 23:22:33 2023 +0000
+
+    WIP. delete schedule and specific context menus for each directory
+
+commit b08ab2a5e61764b43788dfb5ec4b66b8feadc3eb
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Jan 31 18:53:36 2023 +0000
+
+    WIP. Added delete schedule table.
+
+commit 345c1ffefa621759ca4287dcc04866d8cec6c6c9
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Jan 31 17:35:15 2023 +0000
+
+    Put source code into subdirectories and all the difficulties that followed
+
+commit df7cfc5a61a8eacfbe380821f73b63824b27eed4
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Tue Jan 31 10:51:37 2023 +0000
+
+    File management in a stable state. Still lots to do in terms of functionality
+
+commit 0edd5c5e0dff7a08f985d8c89ccb33c0e50df2b6
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Mon Jan 30 22:43:45 2023 +0000
+
+    Added folder tree view and changed layout of dashboard
+
+commit 1862ce20dd1f8478b82296fc59c899ad1799ebd0
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Sun Jan 29 17:05:32 2023 +0000
+
+    Can create new directories and create files and directories inside.
+
+commit 90abd6351479dd2aedb9078d9bdeda47c9a33d2c
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Fri Jan 27 22:50:35 2023 +0000
+
+    WIP. Made a start with virtual file system. Not stable needs work.
+
+commit e3bbccbcbc5aba9c37a8db257207ed2a9a1c4a18
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Fri Jan 27 08:55:20 2023 +0000
+
+    Download option opens directory chooser in downloads folder
+
+commit 6328f79896e6eea01806014a4d9b5fc499b49520
+Merge: 324f4c6 85dc037
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Fri Jan 27 08:46:32 2023 +0000
+
+    Merge branch 'File_mgmt' of https://olympuss.ntu.ac.uk/N1012302/COMP20081_Group_Assessment into File_mgmt
+
+commit 324f4c6fc2a75936be9077a5fc7dea03684afb3a
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Fri Jan 27 08:37:13 2023 +0000
+
+    Fixed the lost bytes issue with storing a file
+
+commit 85dc03765f3ccfedd2f9014b02b34360ea068ca7
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Wed Jan 25 16:17:02 2023 +0000
+
+    Removed files that were added by mistake while testing.
+
+commit 71e08dc3f98633b57f8eb4569f0f08bcb6425bb5
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Wed Jan 25 16:14:18 2023 +0000
+
+    Modified creation of file storage to work on other machines
+
+commit 317f67a3eeaca965f4f619e483dcd3027729ac83
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Wed Jan 25 15:46:38 2023 +0000
+
+    Zipped files are now encrypted with a password using zip4j package. Instead of one zipped file per file chunk each user has an encrypted zipped file named after them in each storage node, files are then added to this zipped file.
+
+commit a87efe8cb33dc75f0dc1e6b6ca1df389568592e7
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Wed Jan 25 11:57:38 2023 +0000
+
+    Changed file chooser to directory chooser when downloading file
+
+commit f1a59a8ba9d1b368c97b6dcc8b4cb05194c1b2e4
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Tue Jan 24 21:36:16 2023 +0000
+
+    Added context menu to file icons with menu options. Need some things clarrifying before continuing with file management dev.
+
+commit 16c475b6f309804813f5e95b7b21a3113f5ca587
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Tue Jan 24 01:21:21 2023 +0000
+
+    Uploaded files are split into 4 storage folders. Can be retreived as well but only quickly tested it. WIP
+
+commit e5e8298c1ac3d37425a3f19065aeecef024df5f5
+Merge: fb17ec1 dd71f29
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Mon Jan 23 21:33:33 2023 +0000
+
+    Merge branch 'master' into File_mgmt
+
+commit fb17ec19a753c38240d4d2e2713b7d036e41242d
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Mon Jan 23 21:32:51 2023 +0000
+
+    Need to merge in changes on master
+
+commit d7f8abb3297a224913f956f9eae87fc4a8e37cae
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Mon Jan 23 19:54:32 2023 +0000
+
+    File management WIP
+
+commit dd71f29cd71d6967b1b31a38274193ed35743829
+Merge: 6ca5ae9 f38e64e
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Mon Jan 23 17:59:42 2023 +0000
+
+    Fixed merge conflicts
+
+commit 6ca5ae9ab088a8edf2cba1492d8ef20e5031b102
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Mon Jan 23 17:48:27 2023 +0000
+
+    Added functionality to auto login a user when the app is reopened
+
+commit f38e64e2d27fc1a7739d19d55c6563750ea1d496
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Mon Jan 23 16:48:06 2023 +0000
+
+    Added so much style to the UI
+
+commit be8716de62b77b4a4d94872ec309752fc915062f
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Mon Jan 23 10:00:41 2023 +0000
+
+    Removed login workaround. Changed style of terminal. Removed unneeded dependencies from module info file.
+
+commit 18a7864b58129681c5e194ca83b928dbdb1c277c
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Sun Jan 22 22:08:31 2023 +0000
+
+    Changed to Terminal class super class to TextFlow instead of TextArea. Added style and animated cursor.
+
+commit 5943487c51f8dd1af9e486df55863c333baebff7
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Sat Jan 21 22:06:36 2023 +0000
+
+    Terminal emulator has all functionality needed just needs thoroughly testing and style added.
+
+commit 9f36d88fd06b53ca489a711dfffeed8429077458
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Fri Jan 20 18:33:29 2023 +0000
+
+    Added nano functionality to console emulator
+
+commit b8f61ae4b53420d0ac9d97c4257fd4e799d1fdb9
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Fri Jan 20 01:09:43 2023 +0000
+
+    WIP console dev. Added more functionality to the console. Working on autocomplete feature.
+
+commit c2f4a57d48bef4c783883b74787a2d21f36c79ac
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Thu Jan 19 13:13:10 2023 +0000
+
+    Started working on console emulator. WIP.
+
+commit 8f9d2a713782ab4bd3e52d2d3f993a85d473cddb
+Merge: 36b67a5 2ed07ea
+Author: N1020368 <michael.swann2021@my.ntu.ac.uk>
+Date:   Tue Jan 17 22:57:02 2023 +0000
+
+    Merge pull request #5 from N1012302/UI_dev
+    
+    Merge improved UI into master
+
+commit 2ed07ea2588e825e570312c50930682e86292db8
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Tue Jan 17 22:55:35 2023 +0000
+
+    Fixed small bug with load user func
+
+commit a18545902dec263d1dd8e21aa0fe5058a7b62b53
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Tue Jan 17 22:53:02 2023 +0000
+
+    Tidied up UI and added some comments. Log in now sets timestamp attribute. Created Helper class for miscellaneous helper functions.
+
+commit 36b67a54b1ed0d0bc1e3525269b9412d29d870a1
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Jan 17 17:33:57 2023 +0000
+
+    Remove user.print() functions
+
+commit a1da7bb37003385e96895e3f0f95dbf92912c0bf
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Jan 17 17:27:47 2023 +0000
+
+    Removed conflict messages
+
+commit f132ee18fcc210f1d4929fd9474aec31bdac7940
+Merge: 2e2ade0 ab0c5bf
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Jan 17 17:25:45 2023 +0000
+
+    Delete db
+
+commit 2e2ade0dfb9d31d149c936a781829d2274d12fc9
+Merge: 51412aa fd8146b
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Jan 17 17:23:07 2023 +0000
+
+    Merge branch 'UI_dev'
+
+commit fd8146b813daaa7c5b80b7edbff9f089fd904d50
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Tue Jan 17 17:15:09 2023 +0000
+
+    User settings added. Needs tidying up and styling but functionality is there.
+
+commit ab0c5bf3db465ceb8ff8c4995a5ba08edb5e8a87
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Tue Jan 17 17:07:07 2023 +0000
+
+    Updated .gitignore to ignore .db files
+
+commit edc5f636fcf4df170ce8e59aebe3e0780bf84852
+Merge: b561dea eb611ee
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Tue Jan 17 17:03:14 2023 +0000
+
+    resolved merge conflict
+
+commit eb611ee85253d2c073b7d11d93f4ec2badde5349
+Merge: 2350c3d e185342
+Author: N1012302 <jake.mattless2021@my.ntu.ac.uk>
+Date:   Tue Jan 17 16:56:58 2023 +0000
+
+    Merge pull request #2 from N1012302/UI_dev
+    
+    Created login, register and dashboard scenes. Really simple and rough…
+
+commit b561deaca808097160830b04563a7139db1a12d9
+Author: Jake Mattless <jake.mattless@gmail.com>
+Date:   Tue Jan 17 16:33:31 2023 +0000
+
+    Added Device table. Added functions to interact with Device table
+
+commit 9bff75754a9ee5a216f0d0f21d8e4296b68a143d
+Merge: 2d8d48c 2350c3d
+Author: N1012302 <jake.mattless2021@my.ntu.ac.uk>
+Date:   Tue Jan 17 11:53:35 2023 +0000
+
+    Merge pull request #1 from N1012302/master
+    
+    Merge from Master
+
+commit e1853423390af60c12a47f2dcfe4c274bdb5f523
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Mon Jan 16 22:24:11 2023 +0000
+
+    Created login, register and dashboard scenes. Really simple and rough version just as a starting off point.
+
+commit 2350c3d5cc70af898d46222820f77729bd73bcb6
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Mon Jan 16 18:37:34 2023 +0000
+
+    Testing ssh
+
+commit 51412aa996ecf5503e9412d12d3f59fa48978859
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Mon Jan 16 11:59:55 2023 +0000
+
+    Remove test from main
+
+commit 2d8d48c3b9c93077cfb21d3940ec5081d853461d
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Sun Jan 15 20:37:29 2023 +0000
+
+    Added password hashing to user login and create. User table is now singleton class.
+
+commit 52187074b4a4e8498806727035ab167148165c8e
+Author: Michael Swann <michaelswann.se@gmail.com>
+Date:   Sun Jan 15 13:22:22 2023 +0000
+
+    Initial dev on SQLite DB. User and User table classes created with simple SQL commonds. No encryption yet still todo.
+
+commit 2b59d772d514bac349ff0d4b8664c2af5cdd85e1
+Author: Michael Swann <n1020368@my.ntu.ac.uk>
+Date:   Sat Jan 14 12:44:56 2023 +0000
+
+    Initial Commit

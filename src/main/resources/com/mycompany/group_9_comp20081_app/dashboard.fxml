@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="DashboardPane" prefHeight="545.0" prefWidth="680.0" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.group_9_comp20081_app.DashboardController">
+   <children>
+      <VBox fx:id="vBox" layoutX="1.0" prefHeight="545.0" prefWidth="679.0">
+         <children>
+            <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="37.0" prefWidth="640.0">
+               <items>
+                  <Button fx:id="logout" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="39.0" />
+                  <Button fx:id="consoleBtn" mnemonicParsing="false" onAction="#goToConsole" prefHeight="25.0" prefWidth="40.0" />
+                  <Button fx:id="userSettings" mnemonicParsing="false" onAction="#goToSettings" prefHeight="25.0" prefWidth="39.0" />
+                  <Button fx:id="uploadBtn" mnemonicParsing="false" onAction="#uploadFile" prefHeight="25.0" prefWidth="40.0" />
+                  <Button fx:id="newFileBtn" mnemonicParsing="false" onAction="#createFile" prefHeight="25.0" prefWidth="39.0" />
+                  <Button fx:id="newDirBtn" mnemonicParsing="false" onAction="#createDirectory" prefHeight="25.0" prefWidth="37.0" />
+                  <Button fx:id="errorLoggerBtn" mnemonicParsing="false" onAction="#goToErrorLogger" prefHeight="25.0" prefWidth="37.0" />
+               </items>
+            </ToolBar>
+            <ToolBar prefHeight="40.0" prefWidth="200.0">
+              <items>
+                  <Button fx:id="backBtn" mnemonicParsing="false" onAction="#navigateBack" prefHeight="25.0" prefWidth="42.0" />
+                  <Button fx:id="forwardBtn" mnemonicParsing="false" onAction="#navigateForward" prefHeight="25.0" prefWidth="41.0" />
+                  <Button fx:id="upBtn" mnemonicParsing="false" onAction="#navigateParent" prefHeight="25.0" prefWidth="40.0" />
+                  <TextField id="dirText" fx:id="pathField" editable="false" prefHeight="25.0" prefWidth="489.0" />
+              </items>
+            </ToolBar>
+            <HBox prefHeight="495.0" prefWidth="679.0">
+               <children>
+                  <ScrollPane fx:id="folderTreePane" fitToHeight="true" fitToWidth="true" prefHeight="351.0" prefWidth="187.0" />
+                  <ScrollPane fx:id="fileViewContainer" fitToHeight="true" fitToWidth="true" prefHeight="363.0" prefWidth="488.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

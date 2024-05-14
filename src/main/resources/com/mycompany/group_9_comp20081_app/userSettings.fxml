@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="UserSettingsPane" prefHeight="480.0" prefWidth="680.0" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.group_9_comp20081_app.UserSettingsController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="249.0" layoutY="36.0" text="User settings" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <ScrollPane focusTraversable="false" hbarPolicy="NEVER" hmax="0.0" layoutX="85.0" layoutY="95.0" prefHeight="348.0" prefWidth="487.0" vvalue="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="95.0">
+         <content>
+            <GridPane alignment="CENTER" maxWidth="1000.0" minWidth="500.0" prefHeight="447.0" prefWidth="600.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.0" minWidth="10.0" prefWidth="338.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="360.0" minWidth="10.0" prefWidth="124.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="360.0" minWidth="10.0" prefWidth="149.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="64.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="78.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="0.0" prefWidth="91.0" text="Username">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameField" disable="true" maxHeight="50.0" minHeight="50.0" prefHeight="50.0" prefWidth="230.0" promptText="Enter Username..." GridPane.rowIndex="1" />
+                  <Button fx:id="changeUsername" alignment="BASELINE_CENTER" maxHeight="49.0" minHeight="49.0" mnemonicParsing="false" onAction="#editUsername" prefHeight="49.0" prefWidth="248.0" styleClass="roundedRight" text="Change Username" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <GridPane.margin>
+                        <Insets bottom="1.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="usernameSave" alignment="BASELINE_CENTER" contentDisplay="RIGHT" maxHeight="49.0" minHeight="49.0" mnemonicParsing="false" onAction="#updateUsername" prefHeight="49.0" prefWidth="232.0" styleClass="noRound" text="Save" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <GridPane.margin>
+                        <Insets bottom="1.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="usernameCancel" alignment="BASELINE_CENTER" contentDisplay="RIGHT" maxHeight="49.0" minHeight="49.0" mnemonicParsing="false" onAction="#cancelUsername" prefHeight="49.0" prefWidth="124.0" styleClass="roundedRight" text="Cancel" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <GridPane.margin>
+                        <Insets bottom="1.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Line endY="15.0" startY="-15.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label prefHeight="61.0" prefWidth="112.0" text="Password" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="currentPasswordField" disable="true" maxHeight="50.0" minHeight="50.0" prefHeight="50.0" prefWidth="230.0" promptText="Enter Old Password" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </PasswordField>
+                  <PasswordField fx:id="newPasswordField1" disable="true" maxHeight="50.0" minHeight="50.0" prefHeight="50.0" prefWidth="230.0" promptText="Enter New Password" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets top="10.0" />
+                     </GridPane.margin>
+                  </PasswordField>
+                  <PasswordField fx:id="newPasswordField2" disable="true" maxHeight="50.0" minHeight="50.0" prefHeight="50.0" prefWidth="230.0" promptText="Re-enter New Password" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets top="20.0" />
+                     </GridPane.margin>
+                  </PasswordField>
+                  <Button fx:id="changePassword" alignment="BASELINE_CENTER" maxHeight="49.0" minHeight="49.0" mnemonicParsing="false" onAction="#editPassword" prefHeight="49.0" prefWidth="248.0" styleClass="roundedRight" text="Change Password" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <GridPane.margin>
+                        <Insets bottom="1.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="passwordSave" alignment="BASELINE_CENTER" contentDisplay="RIGHT" maxHeight="49.0" minHeight="49.0" mnemonicParsing="false" onAction="#updatePassword" prefHeight="49.0" prefWidth="124.0" styleClass="noRound" text="Save" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <GridPane.margin>
+                        <Insets bottom="1.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="passwordCancel" alignment="BASELINE_CENTER" contentDisplay="RIGHT" maxHeight="49.0" minHeight="49.0" mnemonicParsing="false" onAction="#cancelPassword" prefHeight="49.0" prefWidth="124.0" style=": ;" styleClass="roundedRight" text="Cancel" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <GridPane.margin>
+                        <Insets bottom="1.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Line endY="15.0" startY="-15.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Preferences" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="deleteButton" maxHeight="49.0" minHeight="49.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="49.0" prefWidth="200.0" styleClass="redButton" text="Delete Account" GridPane.rowIndex="8" />
+                  <Button fx:id="backButton" cancelButton="true" maxHeight="49.0" minHeight="49.0" mnemonicParsing="false" onAction="#toDashboard" prefHeight="49.0" prefWidth="248.0" styleClass="cancelButton" text="Cancel" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="8" />
+               </children>
+            </GridPane>
+         </content>
+         <padding>
+            <Insets bottom="30.0" left="40.0" right="40.0" />
+         </padding>
+      </ScrollPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

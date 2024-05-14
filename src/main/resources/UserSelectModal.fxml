@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.group_9_comp20081_app.UserSelectModal">
+   <children>
+      <VBox layoutX="138.0" layoutY="90.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="200.0">
+              <items>
+                  <TextField fx:id="userSearchBar" />
+                <Button fx:id="searchBtn" mnemonicParsing="false" onAction="#filterList" text="Search" />
+              </items>
+            </ToolBar>
+            <TableView fx:id="userTable" prefHeight="337.0" prefWidth="323.0">
+              <columns>
+                <TableColumn fx:id="userIdCol" prefWidth="81.0" text="User ID" />
+                <TableColumn fx:id="userNameCol" prefWidth="87.0" text="Username" />
+                  <TableColumn fx:id="shareCol" minWidth="7.0" prefWidth="85.0" text="Share" />
+                  <TableColumn fx:id="readOnlyCol" prefWidth="91.0" text="Read Only" />
+              </columns>
+            </TableView>
+            <SplitPane dividerPositions="0.5" prefHeight="46.0" prefWidth="345.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Button layoutX="53.0" mnemonicParsing="false" onAction="#submit" text="Submit" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Button layoutX="34.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

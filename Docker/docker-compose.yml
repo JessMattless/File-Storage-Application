@@ -1,0 +1,84 @@
+
+services:
+  
+  app:
+    image: pedrombmachado/ntu_lubuntu:comp20081
+    build:
+      context: ./App
+      dockerfile: Dockerfile
+    volumes:
+      - docker_comp20081:/home/ntu-user/NetBeansProjects
+    ports:
+      - '3390:3389'
+    networks:
+      default:
+        ipv4_address: '172.18.0.6'
+    stdin_open: true
+    tty: true
+  
+  storage_1:
+    image: pedrombmachado/comp20081_ubuntu_20.04:latest
+    build:
+      context: ./Storage
+      dockerfile: Dockerfile
+    ports:
+      - '4848:22'
+    networks:
+      default:
+        ipv4_address: '172.18.0.2'
+    volumes:
+      - 'data_1:/user_files'
+  
+  storage_2:
+    image: pedrombmachado/comp20081_ubuntu_20.04:latest
+    build:
+      context: ./Storage
+      dockerfile: Dockerfile
+    ports:
+      - '4849:22'
+    networks:
+      default:
+        ipv4_address: '172.18.0.3'
+    volumes:
+      - 'data_2:/user_files'
+  
+  storage_3:
+    image: pedrombmachado/comp20081_ubuntu_20.04:latest
+    build:
+      context: ./Storage
+      dockerfile: Dockerfile
+    ports:
+      - '4850:22'
+    networks:
+      default:
+        ipv4_address: '172.18.0.4'
+    volumes:
+      - 'data_3:/user_files'
+  
+  storage_4:
+    image: pedrombmachado/comp20081_ubuntu_20.04:latest
+    build:
+      context: ./Storage
+      dockerfile: Dockerfile
+    ports:
+      - '4851:22'
+    networks:
+      default:
+        ipv4_address: '172.18.0.5'
+    volumes:
+      - 'data_4:/user_files'
+    
+volumes:
+  docker_comp20081:
+  data_1: 
+  data_2: 
+  data_3: 
+  data_4: 
+
+networks:
+  default:
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.18.0.0/16"
+    

@@ -1,0 +1,6 @@
+/target/
+*.db
+*.dat
+*.key
+/dir/
+*.log

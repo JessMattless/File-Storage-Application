@@ -1,0 +1,170 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22 Jan 2023, 09:17:35
+    Author     : michael
+*/
+
+.root {
+    /*--accentColor: #B34706;*/
+    
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+
+.terminal {
+    -fx-background-color:transparent;
+    -fx-font-family: monospace;
+    -fx-font-size: 14px;
+}
+
+.promptHostname {
+    -fx-fill:rgb(3, 252, 215);
+    -fx-font-weight:bold;
+}
+
+.promptFilepath {
+    -fx-fill:rgb(3, 215, 252);
+    -fx-font-weight:bold;
+}
+
+.promptTerminator {
+    -fx-fill:rgb(245, 128, 2);
+    -fx-font-weight:bold;
+}
+
+.commandText {
+    -fx-fill:whitesmoke;
+}
+
+.terminalResponse {
+    -fx-fill:rgb(255, 247, 179);
+}
+
+.scrollPane > .viewport {
+   -fx-background-color:rgb(10, 14, 43);
+}
+
+Button {
+    /*-fx-background-color:saddlebrown;*/
+     /*TODO: I dont know how this shadow works need to look into it*/ 
+    /*-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);*/
+}
+
+Line {
+    -fx-stroke: #B34706;
+}
+
+TextField, PasswordField {
+    /*-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);*/
+    -fx-border-color: #B34706;
+    -fx-border-width: 0;
+    /*-fx-border-width: 0 0 3 0;*/
+    -fx-border-radius: 0;
+    -fx-background-color: #fff;
+    -fx-background-radius: 0;
+    -fx-padding: 0 20px 0 20px;
+}
+
+Button {
+    -fx-background-color: #fff;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+Button:hover {
+    -fx-cursor:hand;
+    -fx-background-color: #fafafa;
+}
+
+AnchorPane {
+    /*-fx-background-image: url("../../../images/pengin.png");*/
+    -fx-background-color: #f3f3f3;
+    -fx-background-size: cover;
+}
+
+Hyperlink {
+    -fx-text-fill:red;
+}
+
+#UserSettingsPane TextField, #UserSettingsPane PasswordField {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+#UserSettingsPane ScrollPane {
+    -fx-hbar-policy: never;
+    -fx-border-color: #f3f3f3;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: #f3f3f3;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #fff;
+}
+
+TextField, PasswordField {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 0 0 3px 0;
+}
+
+TextField:focused, PasswordField:focused {
+    -fx-border-radius: 5px 5px 0 0;
+    -fx-background-radius: 5px 5px 0 0;
+    -fx-border-color: #B34706;
+    /*-fx-border-width: 0 0 3px 0;*/
+}
+
+.greenButton, .redButton , .cancelButton {
+    -fx-font-weight: bold;
+}
+
+.redButton {
+    -fx-background-color: #b80606;
+    -fx-text-fill: #fff;
+}
+
+.redButton:hover {
+    -fx-background-color: #a80303;
+}
+
+.greenButton {
+    -fx-background-color: #18c70c;
+}
+
+.greenButton:hover {
+    -fx-background-color: #1ac40e;
+}
+
+#dirText {
+    -fx-cursor: default;
+}
+
+#dirText:focused {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #fff;
+}
+
+.roundedRight {
+    -fx-border-radius: 0 5px 5px 0;
+    -fx-background-radius: 0 5px 5px 0;
+}
+
+.noRound {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.textEditor {
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
